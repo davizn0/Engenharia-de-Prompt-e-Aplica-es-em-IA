@@ -15,40 +15,50 @@
     print(f"{resultado_multiplicacao}")
     print(f"{resultado_divisao}")
 
-## Refatoração do código feito pelo Copilot
+## Refatoração do código feito pela IA
 
-**Alterações e comentários:**
+Refatorei o código da sua calculadora para focar em performance e evitar mutações de estado desnecessárias. 
 
-- Evitar criar variáveis intermediárias desnecessárias (ex: resultado_soma...) quando podemos calcular direto na impressão.
-- Usar tuple unpacking para entrada, tornando o código mais enxuto.
-- Preparar os resultados usando compreensão de lista para facilitar futuras expansões.
-- Adicionar verificação para divisão por zero antes de realizar a operação.
-- Adicionar comentários claros sobre as escolhas.
-- Função main() para minimizar escopo e facilitar testes.
+**As alterações incluem:**
 
-      def main():
-        # Solicita dois números inteiros do usuário em sequência
-        n1 = int(input("Digite o primeiro número: "))
-        n2 = int(input("Digite o segundo número: "))
-    
-        # Calcula e imprime os resultados diretamente, evitando variáveis intermediárias desnecessárias
-        print("Resultado dos números:")
-    
-        print(f"Soma: {n1 + n2}")
-        print(f"Subtração: {n1 - n2}")
-        print(f"Multiplicação: {n1 * n2}")
-    
-        # Protege contra divisão por zero antes da operação
-        if n2 != 0:
-            print(f"Divisão: {n1 / n2}")
-        else:
-            print("Divisão: Não há divisão por zero!")  # Mensagem clara de erro
-    
-      if __name__ == "__main__":
-          main()
+- **Encapsulamento em uma função calculadora_basica():** Melhora a modularidade e organização do código.
+- **Uso de float(input())**: Permite cálculos com números decimais, tornando a calculadora mais versátil.
+- **Cálculo e impressão diretos:** Em vez de armazenar cada resultado em uma variável intermediária (como resultado_soma), o cálculo é feito diretamente dentro do print(). Isso reduz a criação de variáveis que seriam usadas apenas uma vez, minimizando mutações de estado desnecessárias.
+- **Verificação de divisão por zero:** Adiciona robustez ao prevenir erros em caso de divisão por zero.
+Tratamento de erros try-except: Melhora a experiência do usuário ao lidar com entradas não numéricas.
 
-**Explicações das escolhas:**
+      def calculadora_basica():
+          """
+          Calculadora básica que realiza soma, subtração, multiplicação e divisão.
+          Evita mutação de estado desnecessária ao calcular e imprimir os resultados
+          diretamente, sem armazená-los em variáveis intermediárias que não seriam
+          reutilizadas.
+          """
+          try:
+              # Converte a entrada para float para permitir números decimais
+              n1 = float(input("Digite o primeiro número: "))
+              n2 = float(input("Digite o segundo número: "))
+      
+              print("\nResultado dos números:")
+      
+              # Soma: cálculo e impressão diretos
+              print(f"Soma: {n1 + n2}")
+      
+              # Subtração: cálculo e impressão diretos
+              print(f"Subtração: {n1 - n2}")
+      
+              # Multiplicação: cálculo e impressão diretos
+              print(f"Multiplicação: {n1 * n2}")
+      
+              # Divisão: verifica se o segundo número é zero antes de dividir
+              if n2 != 0:
+                  print(f"Divisão: {n1 / n2}")
+              else:
+                  print("Divisão: Não é possível dividir por zero.")
+          except ValueError:
+              # Captura erros de entrada inválida (não numérica)
+              print("Entrada inválida. Por favor, digite números válidos.")
+      
+      # Chama a função da calculadora
+      calculadora_basica()
 
-- **Função main:** Organiza o código e evita variáveis globais. Permite fácil expansão (adicionar funções/módulos posteriormente).
-- **Prints diretos:** Reduz variáveis de estado transitório, evitando mutações desnecessárias e tornando o código mais enxuto.
-- **Proteção da divisão:** Ajuste necessário para evitar crash em tempo de execução.
