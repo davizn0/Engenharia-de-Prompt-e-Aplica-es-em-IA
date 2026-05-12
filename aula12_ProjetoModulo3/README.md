@@ -10,7 +10,11 @@ Automatizar o envio de e-mails de confirmação sempre que um usuário preencher
 - **Gmail** (para envio do e-mail)
 
 ## Protótipo
-(https://us2.make.com/public/shared-scenario/9Fhp3hOTRc6/integration-google-sheets-gmail)
+
+**Forms:** https://forms.gle/mpgSrA2XcvA8j3LT7
+
+**Make:** https://us2.make.com/public/shared-scenario/9Fhp3hOTRc6/integration-google-sheets-gmail
+
 
 Prints do funcionamento:
 - Print 1: Cenário no Make com módulos conectados.
