@@ -38,3 +38,15 @@ pouco tempo de produção. Seria a escolha ideal para um projeto de curto prazo.
 - Difícil escalar ou customizar além do que a ferramenta permite com o plano gratuito.
 - Migrar para outra solução ou até plataforma depois é trabalhoso.
 
+## Reflexão Crítica
+
+A principal limitação enfrentada foi o erro de autenticação [403] no módulo Gmail, causado por permissões insuficientes concedidas ao Make
+durante a conexão inicial com o Google. A solução foi reconectar a conta concedendo todas as permissões solicitadas, incluindo a de envio de
+e-mails. Isso evidencia uma limitação real das plataformas no-code: o usuário depende de fluxos de autorização de terceiros (OAuth) que podem
+falhar silenciosamente, exigindo diagnóstico mesmo sem programar.
+
+## Colaboração
+
+O projeto foi realizado individualmente. Todas as etapas, como: discussão crítica, configuração do protótipo e documentação foram
+desenvolvidas por mim mesmo, único integrante, o que exigiu maior autonomia na tomada de decisões técnicas e se tornando mais
+trabalhoso. Mas serviu de grande aprendizado.
