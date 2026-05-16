@@ -4,10 +4,10 @@
 Automatizar o envio de e-mails de confirmação sempre que um usuário preencher um formulário de contato.
 
 ## Plataformas Utilizadas
-- **Make** (make.com)
+- **Make**
 - **Google Forms**
 - **Google Sheets** (Banco de Dados)
-- **Gmail** (para envio do e-mail)
+- **Gmail**
 
 ## Protótipo
 
@@ -22,7 +22,7 @@ Prints do funcionamento:
 - Print 3: Planilha com os dados para o e-mail.
 - Print 4: E-mail recebido na caixa de entrada.
 
-## Justificativa Técnica da Plataforma
+## Justificativa da Plataforma Make
 O Make foi escolhido por ser gratuito, visual, intuitivo e especializado em automações de fluxo entre sistemas de forma simples. 
 Para o desafio proposto (integrar Forms + Gmail), ele oferece conectores dos aplicativos prontos, o que permite criar e testar o protótipo em
 pouco tempo de produção. Seria a escolha ideal para um projeto de curto prazo.
