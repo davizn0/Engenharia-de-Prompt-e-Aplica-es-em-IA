@@ -1,4 +1,4 @@
-# Protótipo Low Code / No Code — Automação de E-mails
+# Protótipo Low Code/No Code — Automação de E-mails
 
 ## Descrição do Desafio
 Automatizar o envio de e-mails de confirmação sempre que um usuário preencher um formulário de contato.
