@@ -13,10 +13,6 @@ Automatizar o envio de e-mails de confirmação sempre que um usuário preencher
 
 ## Plataformas Utilizadas
 - **Make**
-- **Google Forms**
-- **Google Sheets** (Banco de Dados)
-- **Gemini**
-- **Gmail**
 
 
 ## Protótipo
