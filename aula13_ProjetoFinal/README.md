@@ -2,7 +2,7 @@
 
 
 ## Participantes
-- Davi Lucas de Oliveira Sousa (45845531)
+- [Davi Lucas de Oliveira Sousa](https://github.com/davizn0/Engenharia-de-Prompt-e-Aplica-es-em-IA/tree/main/aula13_ProjetoFinal) (45845531)
 - [Lorruan Pereira Soares](https://github.com/lorruanpereira21/Engenharia-de-Prompt-e-Aplica-es-em-Ia-) (45886466)
 
 
