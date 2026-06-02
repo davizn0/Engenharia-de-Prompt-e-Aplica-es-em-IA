@@ -3,7 +3,7 @@
 
 ## Participantes
 - Davi Lucas de Oliveira Sousa (45845531)
-- Lorruan Pereira Soares (45886466)
+- [Lorruan Pereira Soares](https://github.com/lorruanpereira21/Engenharia-de-Prompt-e-Aplica-es-em-Ia-) (45886466)
 
 
 ## Desafio Escolhido
@@ -53,6 +53,7 @@ e testar o protótipo em pouco tempo de produção. Seria a escolha ideal para u
 2. **Integração de várias plataformas do Google:** Forms, Sheets, Gemini e Gmail funcionam de forma plug-and-play dentro do Make, eliminando configurações complexas de autenticação.
 3. **Respostas inteligentes e personalizadas:** o Google Gemini gera respostas únicas para cada mensagem recebida, tornando o atendimento automatizado mais humano e relevante.
 4. **Triagem automática por urgência:** O filtro condicional classifica as mensagens e direciona e-mails diferentes conforme a prioridade, sem intervenção manual.
+5. **Histórico automático de atendimentos:** cada interação é registrada em uma planilha, criando um banco de dados de atendimentos sem esforço adicional.
 
 
 ## Limitações
@@ -61,6 +62,7 @@ e testar o protótipo em pouco tempo de produção. Seria a escolha ideal para u
 2. **Filtro condicional:** O filtro condicional detecta a palavra "urgente" apenas em letras minúsculas. Variações como "URGENTE" ou "Urgente" não seriam capturadas sem ajustes adicionais no filtro.
 3. **Custo da IA:** o Google Gemini é gratuito dentro dos limites do plano, mas em volumes altos de mensagens pode gerar custos ou limitações de requisições por minuto.
 4. **Controle de segurança:** os dados dos usuários (nome, e-mail, mensagem) trafegam por servidores de terceiros (Make, Google), o que levanta questões de privacidade e conformidade com a LGPD em contextos empresariais reais.
+5. **Comunicação Unidirecional:** o sistema responde apenas novos envios do Google Forms. Se o usuário responder o e-mail recebido, nenhuma nova automação é disparada. O Make não monitora a caixa de entrada do Gmail, apenas novas linhas na planilha.
 
 
 ## Reflexão Crítica
@@ -76,3 +78,12 @@ O projeto foi desenvolvido em dupla, com divisão de responsabilidades da seguin
 - **Davi:** Configuração do cenário no Make, integração com Google Gemini, configuração dos filtros condicionais e documentação no GitHub.
 
 A comunicação foi contínua durante toda a atividade, com decisões técnicas tomadas em conjunto, especialmente na escolha da plataforma de IA após os erros encontrados com OpenAI e Groq.
+
+## Próximos Passos
+
+### Evoluções Futuras
+
+- Substituir o filtro de palavras-chave por uma classificação feita pelo próprio Gemini, tornando a triagem de urgência mais inteligente e robusta.
+- Adicionar um painel de controle em Google Sheets com gráficos automáticos de volume de atendimentos por dia, tipo e tempo de resposta.
+- Integrar um módulo de validação de e-mail antes do envio para evitar falhas por endereços inválidos.
+- Evoluir o protótipo para um sistema completo de atendimento ao cliente como proposta para o Projeto Final da Unidade 3, incluindo categorização automática de mensagens, respostas por tipo de solicitação e relatório semanal automatizado.
